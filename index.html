@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f3f5f9;
+            font-family: Arial, sans-serif;
+            color: #202b46;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 650px;
+            padding: 50px 30px;
+            text-align: center;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 12px 35px rgba(32, 43, 70, 0.12);
+        }
+
+        h1 {
+            margin-bottom: 12px;
+            font-size: 34px;
+        }
+
+        p {
+            margin-bottom: 35px;
+            color: #6e7080;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            min-width: 180px;
+            padding: 16px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+        .a1 {
+            background: #202b46;
+            color: #ffffff;
+        }
+
+        .a1:hover {
+            background: #354568;
+        }
+
+        .a2 {
+            background: #7357a6;
+            color: #ffffff;
+        }
+
+        .a2:hover {
+            background: #5d438d;
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #9296a3;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Web Development</h1>
+        <p>Welcome! Choose an assignment to visit the website.</p>
+
+        <div class="buttons">
+            <a class="button a1" href="./A1/">Open A1 Website</a>
+            <a class="button a2" href="./A2/">Open A2 Website</a>
+        </div>
+
+        <footer>
+            Web Development Assignments
+        </footer>
+    </main>
+</body>
+</html>
