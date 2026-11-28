@@ -1,0 +1,75 @@
+<!-- Created by Ahtasham Hussain -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Ahtasham Hussain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html" aria-current="page">Register</a>
+        </nav>
+        <div class="header-content">
+            <p class="eyebrow">JOIN THE PHOTO COMMUNITY</p>
+            <h1>Create an Account</h1>
+            <p class="intro">Register to share your interest in winter photography and explore the gallery.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="card registration-card">
+            <h2>Registration</h2>
+            <p>Complete each field to create your photography community profile.</p>
+            <p class="terms-copy">By registering, you agree to use the community respectfully and share only photos you have permission to post.</p>
+            <form class="registration-form" action="https://httpbin.org/post" method="post">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" minlength="3" autocomplete="username" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" minlength="8" autocomplete="new-password" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="user-type">User type</label>
+                    <select id="user-type" name="user_type" required>
+                        <option value="" selected disabled>Select your photography interest</option>
+                        <option value="photographer">Photographer</option>
+                        <option value="enthusiast">Photography enthusiast</option>
+                        <option value="viewer">Gallery viewer</option>
+                    </select>
+                </div>
+
+                <div class="terms-field">
+                    <input type="checkbox" id="accept-terms" name="accept_terms" value="accepted" required>
+                    <label for="accept-terms">I accept the Terms of Use above.</label>
+                </div>
+
+                <button class="register-button" type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Ahtasham Hussain · Personal Website</p>
+        <p>Modified by: Ahtasham Hussain</p>
+    </footer>
+</body>
+</html>
